@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://odk05hc37xoi"]
+
+[ext_resource type="Texture2D" uid="uid://cg5jeahwykx02" path="res://character folder/ghost-vanish.png" id="1_c5hyc"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_q63x7"]
+radius = 8.06226
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_q63x7")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -2)
+scale = Vector2(0.328125, 0.3125)
+texture = ExtResource("1_c5hyc")
+hframes = 7
+
+[node name="Area2D" type="Area2D" parent="."]
